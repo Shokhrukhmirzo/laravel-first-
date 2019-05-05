@@ -20,7 +20,7 @@
                   <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/news">News</a>
+                  <a class="nav-link" href="/news">About Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/services">Services</a>
