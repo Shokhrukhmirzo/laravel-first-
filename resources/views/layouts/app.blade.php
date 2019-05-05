@@ -55,27 +55,30 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <!-- Styles -->
     <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!--Swiper.css-->
-    <link href="{{ asset('css/swiper.min.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/swipe.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{{asset('css/my_style.css')}}" rel="stylesheet">
+
 
 </head>
 <body>
     <div id="app"></div>
         @include('inc.navbar')
-        <div class="container">
+        <div class="container-fluid">
             @include('inc.messages')
             @yield('content')
+            @include('inc.footer')
         </div>
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
-        CKEDITOR.replace( 'article-ckeditor' );
+        CKEDITOR.replace('article-ckeditor');
     </script>
 </body>
 </html>

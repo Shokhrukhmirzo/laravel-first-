@@ -16,4 +16,8 @@ class Post extends Model
     public function user(){
         return $this->belongsTo('App\User');
     }
+
+    public function ingridients(){
+    return $this->hasMany(ingridients::class);
+    }
 }

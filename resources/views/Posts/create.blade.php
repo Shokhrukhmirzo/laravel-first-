@@ -31,17 +31,19 @@
             <hr>
     {!! Form::open(['action' => 'PostController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         <div class="form-group">
-            {{Form::label('title', 'Title')}}
+            {{Form::label('title', 'Write What are You cooking!')}}
             {{Form::text('title','',['class' => 'form-control', 'placeholder' => 'Title'])}}
         </div>
         <div class="form-group">
-            {{Form::label('body', 'Body')}}
+            {{Form::label('body', 'Ingridiendts and steps:')}}
             {{Form::textarea('body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Text Body'])}}
         </div>
 
-        <div class="form-group">
+        <div id="my-button" class="form-group">
             {{Form::file('cover_image')}}
         </div>
+
+        <br>
 
         {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
     {!! Form::close() !!}

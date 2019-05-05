@@ -85,6 +85,29 @@ hr {
   overflow: visible;
 }
 
+
+input[type="file"] {
+    color: transparent;
+    opacity: 0;
+  }
+
+  #my-button {
+    position: relative;
+  }
+
+  #my-button:after {
+    content: "Choose images";
+    border: 2px solid green;
+    background-color: green;
+    position: absolute;
+    display: block;
+    color:white;
+    border-radius:8px;
+    padding: 5px;
+    top: 1px;
+    left: 1px;
+    pointer-events: none;
+  }
 h1,
 h2,
 h3,

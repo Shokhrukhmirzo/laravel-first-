@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Input;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,7 +28,7 @@ Route::get('/users/{id}/{name}', function ($id, $name) {
 
 Route::get('/', 'PagesController@index');
 Route::get('/news', 'PagesController@news');
-Route::get('/services', 'PagesController@services');
+/* Route::get('/services', 'PagesController@services');*/
 
 Route::resource('posts', 'PostController');
 
@@ -37,3 +38,6 @@ Route::resource('posts', 'PostController');
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
+
+Route::get('/search', 'PostController@search');
+
